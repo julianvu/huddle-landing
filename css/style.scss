@@ -1,8 +1,19 @@
 $primary: hsl(322, 100%, 66%);
+$very-pale-cyan: hsl(193, 100%, 96%);
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Open+Sans&display=swap");
 @import "../scss/bootstrap.scss";
 
 #header {
-  background: url("../images/bg-hero-desktop.svg");
+    background: url("../images/bg-hero-desktop.svg");
+    background-size: contain;
+    background-color: $very-pale-cyan;
+
+    h1 {
+        font-family: "Poppins", sans-serif;
+    }
+    p,
+    button {
+        font-family: "Open Sans", sans-serif;
+    }
 }
