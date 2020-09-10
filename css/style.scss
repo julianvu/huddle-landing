@@ -1,19 +1,38 @@
 $primary: hsl(322, 100%, 66%);
 $very-pale-cyan: hsl(193, 100%, 96%);
+$very-dark-cyan: hsl(192, 100%, 9%);
+
+$theme-colors: (
+  "very-dark-cyan": $very-dark-cyan,
+);
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins&family=Open+Sans&display=swap");
 @import "../scss/bootstrap.scss";
 
 #header {
-    background: url("../images/bg-hero-desktop.svg");
-    background-size: contain;
-    background-color: $very-pale-cyan;
+  background: url("../images/bg-hero-desktop.svg");
+  background-size: contain;
+  background-color: $very-pale-cyan;
 
-    h1 {
-        font-family: "Poppins", sans-serif;
-    }
-    p,
-    button {
-        font-family: "Open Sans", sans-serif;
-    }
+  h1 {
+    font-family: "Poppins", sans-serif;
+  }
+  p,
+  button {
+    font-family: "Open Sans", sans-serif;
+  }
+}
+
+#big-cards {
+  .container {
+    border-radius: 10px;
+  }
+}
+
+footer {
+  .container {
+    border-radius: 10px;
+    position: relative;
+    bottom: 150px;
+  }
 }
