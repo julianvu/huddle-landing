@@ -10988,3 +10988,33 @@ footer .container {
   position: relative;
   bottom: 150px;
 }
+
+@media (max-width: 768px) {
+  #header img {
+    max-width: 75%;
+  }
+  #header button {
+    max-width: 75%;
+    padding: 10px 20px 10px 20px !important;
+    margin-right: 0 !important;
+    font-size: 12px;
+  }
+  #header h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 36px;
+  }
+  #header p {
+    text-align: center;
+  }
+  #header .center-resp {
+    text-align: center !important;
+  }
+  .mb-resp {
+    margin-bottom: 1rem;
+  }
+  .mx-resp {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}

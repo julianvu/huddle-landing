@@ -3,36 +3,74 @@ $very-pale-cyan: hsl(193, 100%, 96%);
 $very-dark-cyan: hsl(192, 100%, 9%);
 
 $theme-colors: (
-  "very-dark-cyan": $very-dark-cyan,
+    "very-dark-cyan": $very-dark-cyan,
 );
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins&family=Open+Sans&display=swap");
 @import "../scss/bootstrap.scss";
 
 #header {
-  background: url("../images/bg-hero-desktop.svg");
-  background-size: contain;
-  background-color: $very-pale-cyan;
+    background: url("../images/bg-hero-desktop.svg");
+    background-size: contain;
+    background-color: $very-pale-cyan;
 
-  h1 {
-    font-family: "Poppins", sans-serif;
-  }
-  p,
-  button {
-    font-family: "Open Sans", sans-serif;
-  }
+    h1 {
+        font-family: "Poppins", sans-serif;
+    }
+    p,
+    button {
+        font-family: "Open Sans", sans-serif;
+    }
 }
 
 #big-cards {
-  .container {
-    border-radius: 10px;
-  }
+    .container {
+        border-radius: 10px;
+    }
 }
 
 footer {
-  .container {
-    border-radius: 10px;
-    position: relative;
-    bottom: 150px;
-  }
+    .container {
+        border-radius: 10px;
+        position: relative;
+        bottom: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    #header {
+        img {
+            max-width: 75%;
+        }
+
+        button {
+            max-width: 75%;
+            padding: 10px 20px 10px 20px !important;
+            margin-right: 0 !important;
+            font-size: 12px;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            text-align: center;
+            margin-bottom: 36px;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .center-resp {
+            text-align: center !important;
+        }
+    }
+
+    .mb-resp {
+        margin-bottom: 1rem;
+    }
+
+    .mx-resp {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
 }
